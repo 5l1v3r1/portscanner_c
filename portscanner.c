@@ -44,7 +44,7 @@ int main(int argc, char **argv)
 		exit(1);
 	}
 
-	for (port=0; port=65535; port++) {
+	for (port=0; port<=65535; port++) {
 		struct sockaddr_in addr_name;
 		if ((sockfd = socket(AF_INET, SOCK_STREAM, 0)) == -1) {
 			fprintf(stderr, "[-] %s\n", strerror(errno));
